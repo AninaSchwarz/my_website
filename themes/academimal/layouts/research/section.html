@@ -1,0 +1,301 @@
+{{ define "main" -}}
+{{ .Content }}
+    <style>
+        /* Font size for paragraphs */
+        p {
+            font-size: 12px;
+        }
+
+        p.sidebar {
+            font-size: 14px;
+        }
+        
+        /* Font size for paragraphs - or 12px? */
+        body {
+            font-size: 12px;
+        }
+
+        /* Font size for headings */
+        h2, h3 {
+            font-size: 18px; /* check font size */
+        }
+        
+        /* Font size for headings */
+        h4 {
+            font-size: 15px; /* check font size */
+        }
+    </style>
+    <script>
+        function toggle(index) {
+            objid = "pubabs_" + index.toString();
+            linkid = "pubabslink_" + index.toString();
+            absobj = document.getElementById(objid);
+            linkobj = document.getElementById(linkid);
+            if (absobj.style.display === "none") {
+                absobj.style.display = "inline";
+                linkobj.style.display = "none";
+            }
+            else {
+                absobj.style.display = "none";
+                linkobj.style.display = "inline";
+            }
+        }
+    </script>
+
+    {{ range .Site.Data.research }}
+    {{ $.Scratch.Set "count" 0 }}
+
+
+    <h2 id="Publications">Publications</h2>
+    <!--  <div style="margin-top:-25px;"></div>  -->
+    {{ with .publications }}
+    {{range . }}
+    {{ $.Scratch.Add "count" 1 }} 
+    {{$index:= $.Scratch.Get "count" }}
+    {{ $other_text := .other_text }}
+
+    <p>
+        <h4 style="margin:20px 0px 5px;">{{ with .pdflink }}<a href="{{ . }}" target="blank">{{ end }}{{ .title }}{{ with .pdflink }}</a>{{ end }}</h4>
+        {{ delimit ( apply .authors "replace" "." "Anina Schwarzenbach" "Anina Schwarzenbach" ) ", " }}<br> 
+        <!--{{ delimit ( apply .authors "replace" "." "Anina Schwarzenbach" "<em>Anina Schwarzenbach</em>" ) ", " }}<br> -->
+        <!--{{ with .coauthors }}<span style="margin:5px 0px 5px 0px;">(with {{ . }}){{ end }}</span> -->
+        <em>{{ .book }}, {{ .year }} </em> 
+        <!--<em>{{ .book }}, {{ .year }} </em> -->
+        {{ with .editors }}<p style="margin:5px 0px 5px 0px;">(Eds. {{ . }})</p>{{ end }}
+        {{ with .note }}<p style="margin:5px 0px 5px 0px;">{{ . }}</p>{{ end }}
+        {{ with .abstract }}<p style="margin:5px 0px 5px 0px;"><a href="javascript:toggle({{ $index }})">Abstract<span id="pubabslink_{{ $index }}"> (click to expand)</span></a><span id="pubabs_{{ $index }}" style="display:none;">: {{ . }}</span></p>{{ end }}
+        {{ with .links }}
+        {{ range . }}
+        <p style="margin:5px 0px 5px 0px;"><a href="{{ .url }}" target="blank">• {{ .text }}</a>{{ with .note }}: {{ . }}{{ end }}</li>
+        {{ end }}
+        {{ end }}
+
+        {{ with .presscoverage }}
+        <p style="margin:5px 0px 5px 0px;"> Press coverage:
+        {{ range $i, $e := . }}{{ if $i }},  {{ end }}<a href="{{ .url }}" target="blank">{{ $e.text }}</a>
+        {{ end }}
+        {{ end }}
+
+       {{ with .other }}
+        <p style="margin:5px 0px 5px 0px;"> {{ $other_text }}:
+        {{ range $i, $e := . }}{{ if $i }},  {{ end }}<a href="{{ .url }}" target="blank">{{ $e.text }} </a> 
+        {{ end }}
+        {{ end }}
+    </p>
+
+    {{ end }}
+    {{ end }}
+    <br>
+
+
+    <h2 id="Contributionbooks">Contribution to Books</h2>
+    <!--  <div style="margin-top:-25px;"></div>  -->
+    {{ with .contributionbooks }}
+    {{range . }}
+    {{ $.Scratch.Add "count" 1 }} 
+    {{$index:= $.Scratch.Get "count" }}
+    {{ $other_text := .other_text }}
+
+    <p>
+        <h4 style="margin:20px 0px 5px;">{{ with .pdflink }}<a href="{{ . }}" target="blank">{{ end }}{{ .title }}{{ with .pdflink }}</a>{{ end }}</h4>
+        {{ delimit ( apply .authors "replace" "." "Anina Schwarzenbach" "Anina Schwarzenbach" ) ", " }}<br> 
+        <!--{{ delimit ( apply .authors "replace" "." "Anina Schwarzenbach" "<em>Anina Schwarzenbach</em>" ) ", " }}<br> -->
+        <!--{{ with .coauthors }}<span style="margin:5px 0px 5px 0px;">(with {{ . }}){{ end }}</span> -->
+        <em>{{ .book }}, {{ .year }} </em> 
+        {{ with .editors }}<p style="margin:5px 0px 5px 0px;">(Eds. {{ . }})</p>{{ end }}
+        {{ with .note }}<p style="margin:5px 0px 5px 0px;">{{ . }}</p>{{ end }}
+        {{ with .abstract }}<p style="margin:5px 0px 5px 0px;"><a href="javascript:toggle({{ $index }})">Abstract<span id="pubabslink_{{ $index }}"> (click to expand)</span></a><span id="pubabs_{{ $index }}" style="display:none;">: {{ . }}</span></p>{{ end }}
+        {{ with .links }}
+        {{ range . }}
+        <p style="margin:5px 0px 5px 0px;"><a href="{{ .url }}" target="blank">• {{ .text }}</a>{{ with .note }}: {{ . }}{{ end }}</li>
+        {{ end }}
+        {{ end }}
+
+        {{ with .presscoverage }}
+        <p style="margin:5px 0px 5px 0px;"> Press coverage:
+        {{ range $i, $e := . }}{{ if $i }},  {{ end }}<a href="{{ .url }}" target="blank">{{ $e.text }}</a>
+        {{ end }}
+        {{ end }}
+
+       {{ with .other }}
+        <p style="margin:5px 0px 5px 0px;"> {{ $other_text }}:
+        {{ range $i, $e := . }}{{ if $i }},  {{ end }}<a href="{{ .url }}" target="blank">{{ $e.text }} </a> 
+        {{ end }}
+        {{ end }}
+    </p>
+
+    {{ end }}
+    {{ end }}
+    <br>
+
+
+    <h2 id="Underrevision">Under Review</h2>
+    <!--  <div style="margin-top:-25px;"></div>  -->
+    {{ with .underrevision }}
+    {{range . }}
+    {{ $.Scratch.Add "count" 1 }} 
+    {{$index:= $.Scratch.Get "count" }}
+    {{ $other_text := .other_text }}
+
+    <p>
+        <h4 style="margin:20px 0px 5px;">{{ with .pdflink }}<a href="{{ . }}" target="blank">{{ end }}{{ .title }}{{ with .pdflink }}</a>{{ end }}</h4>
+        {{ delimit ( apply .authors "replace" "." "Anina Schwarzenbach" "Anina Schwarzenbach" ) ", " }}<br> 
+        <!--{{ delimit ( apply .authors "replace" "." "Anina Schwarzenbach" "<em>Anina Schwarzenbach</em>" ) ", " }}<br> -->
+        <!--{{ with .coauthors }}<span style="margin:5px 0px 5px 0px;">(with {{ . }}){{ end }}</span> -->
+        <em>{{ .book }}, {{ .year }} </em> 
+        {{ with .editors }}<p style="margin:5px 0px 5px 0px;">(Eds. {{ . }})</p>{{ end }}
+        {{ with .note }}<p style="margin:5px 0px 5px 0px;">{{ . }}</p>{{ end }}
+        {{ with .abstract }}<p style="margin:5px 0px 5px 0px;"><a href="javascript:toggle({{ $index }})">Abstract<span id="pubabslink_{{ $index }}"> (click to expand)</span></a><span id="pubabs_{{ $index }}" style="display:none;">: {{ . }}</span></p>{{ end }}
+        {{ with .links }}
+        {{ range . }}
+        <p style="margin:5px 0px 5px 0px;"><a href="{{ .url }}" target="blank">• {{ .text }}</a>{{ with .note }}: {{ . }}{{ end }}</li>
+        {{ end }}
+        {{ end }}
+
+        {{ with .presscoverage }}
+        <p style="margin:5px 0px 5px 0px;"> Press coverage:
+        {{ range $i, $e := . }}{{ if $i }},  {{ end }}<a href="{{ .url }}" target="blank">{{ $e.text }}</a>
+        {{ end }}
+        {{ end }}
+
+       {{ with .other }}
+        <p style="margin:5px 0px 5px 0px;"> {{ $other_text }}:
+        {{ range $i, $e := . }}{{ if $i }},  {{ end }}<a href="{{ .url }}" target="blank">{{ $e.text }} </a> 
+        {{ end }}
+        {{ end }}
+    </p>
+
+    {{ end }}
+    {{ end }}
+    <br>
+
+
+   
+    <h2 id="WorkingPapers">Working Papers</h2>
+
+    {{ with .workingpapers }}
+    {{range . }}
+    {{ $.Scratch.Add "count" 1 }}
+    {{$index:= $.Scratch.Get "count" }}
+    {{ $other_text := .other_text }} 
+
+    <p>
+        <h4 style="margin:20px 0px 5px;">{{ with .pdflink }}<a href="{{ . }}" target="blank">{{ end }}{{ .title }}{{ with .pdflink }}</a>{{ end }}</h4>
+        {{ delimit ( apply .authors "replace" "." "Anina Schwarzenbach" "Anina Schwarzenbach" ) ", " }}<br> 
+        <!--{{ with .coauthors }}<p style="margin:5px 0px 5px 0px;">(with {{ . }})</p>{{ end }}-->
+        {{ with .editors }}<p style="margin:5px 0px 5px 0px;">(Eds. {{ . }})</p>{{ end }}
+        <!--{{ with .book_edited }}<span style="margin:5px 0px 5px 0px;">in <em>{{ . }}</em></span>{{ end }}<em>{{ .book }}, {{ .year }} </em> -->
+        {{ with .note }}<p style="margin:5px 0px 5px 0px;">{{ . }}</p>{{ end }}
+        {{ with .abstract }}<p style="margin:5px 0px 5px 0px;"><a href="javascript:toggle({{ $index }})">Abstract<span id="pubabslink_{{ $index }}"> (click to expand)</span></a><span id="pubabs_{{ $index }}" style="display:none;">: {{ . }}</span></p>{{ end }}
+        {{ with .links }}
+        {{ range . }}
+        <p style="margin:5px 0px 5px 0px;"><a href="{{ .url }}" target="blank">• {{ .text }}</a>{{ with .note }}: {{ . }}{{ end }}</li>
+        {{ end }}
+        {{ end }}
+
+        {{ with .presscoverage }}
+        <p style="margin:5px 0px 5px 0px;"> Press coverage:
+        {{ range $i, $e := . }}{{ if $i }},  {{ end }}<a href="{{ .url }}" target="blank">{{ $e.text }}</a>
+        {{ end }}
+        {{ end }}
+
+       {{ with .other }}
+        <p style="margin:5px 0px 5px 0px;"> {{ $other_text }}:
+        {{ range $i, $e := . }}{{ if $i }},  {{ end }}<a href="{{ .url }}" target="blank">{{ $e.text }} </a> 
+        {{ end }}
+        {{ end }}
+    
+    </p>
+
+    {{ end }}
+    {{ end }}
+    <br>
+
+    <h2 id="Databases">Developed Databases</h2>
+    <!--  <div style="margin-top:-25px;"></div>  -->
+    {{ with .databases }}
+    {{range . }}
+    {{ $.Scratch.Add "count" 1 }} 
+    {{$index:= $.Scratch.Get "count" }}
+    {{ $other_text := .other_text }}
+
+    <p>
+        <h4 style="margin:20px 0px 5px;">{{ with .pdflink }}<a href="{{ . }}" target="blank">{{ end }}{{ .title }}{{ with .pdflink }}</a>{{ end }}</h4>
+        {{ delimit ( apply .authors "replace" "." "Anina Schwarzenbach" "Anina Schwarzenbach" ) ", " }}<br> 
+        <!--{{ delimit ( apply .authors "replace" "." "Anina Schwarzenbach" "<em>Anina Schwarzenbach</em>" ) ", " }}<br> -->
+        <!--{{ with .coauthors }}<span style="margin:5px 0px 5px 0px;">(with {{ . }}){{ end }}</span> -->
+        <em>{{ .book }}, {{ .year }} </em> 
+        {{ with .editors }}<p style="margin:5px 0px 5px 0px;">(Eds. {{ . }})</p>{{ end }}
+        {{ with .note }}<p style="margin:5px 0px 5px 0px;">{{ . }}</p>{{ end }}
+        {{ with .abstract }}<p style="margin:5px 0px 5px 0px;"><a href="javascript:toggle({{ $index }})">Abstract<span id="pubabslink_{{ $index }}"> (click to expand)</span></a><span id="pubabs_{{ $index }}" style="display:none;">: {{ . }}</span></p>{{ end }}
+        {{ with .links }}
+        {{ range . }}
+        <p style="margin:5px 0px 5px 0px;"><a href="{{ .url }}" target="blank">• {{ .text }}</a>{{ with .note }}: {{ . }}{{ end }}</li>
+        {{ end }}
+        {{ end }}
+
+        {{ with .presscoverage }}
+        <p style="margin:5px 0px 5px 0px;"> Press coverage:
+        {{ range $i, $e := . }}{{ if $i }},  {{ end }}<a href="{{ .url }}" target="blank">{{ $e.text }}</a>
+        {{ end }}
+        {{ end }}
+
+       {{ with .other }}
+        <p style="margin:5px 0px 5px 0px;"> {{ $other_text }}:
+        {{ range $i, $e := . }}{{ if $i }},  {{ end }}<a href="{{ .url }}" target="blank">{{ $e.text }} </a> 
+        {{ end }}
+        {{ end }}
+    </p>
+
+    {{ end }}
+    {{ end }}
+    <br>
+
+<!--   
+
+   <h2 id="PolicyPapers">Book Chapters & Policy Papers</h2>
+    {{ with .policypapers }}
+    {{range . }}
+    {{ $.Scratch.Add "count" 1 }} 
+    {{$index:= $.Scratch.Get "count" }}
+    {{ $other_text := .other_text }}
+    <p>
+        <h4 style="margin:20px 0px 5px;">{{ with .pdflink }}<a href="{{ . }}" target="blank">{{ end }}{{ .title }}{{ with .pdflink }}</a>{{ end }}</h4>
+        
+        {{ with .coauthors }}<p style="margin:5px 0px 5px 0px;">(with {{ . }})</p>{{ end }}
+
+        {{ with .editors }}<p style="margin:5px 0px 5px 0px;">(Eds. {{ . }})</p>{{ end }}
+
+        {{ with .book_edited }}<span style="margin:5px 0px 5px 0px;">in <em>{{ . }}</em></span>{{ end }}<em>{{ .book }}, {{ .year }} </em>
+
+        {{ with .note }}<p style="margin:5px 0px 5px 0px;">{{ . }}</p>{{ end }}
+
+        {{ with .abstract }}<p style="margin:5px 0px 5px 0px;"><a href="javascript:toggle({{ $index }})">Abstract<span id="pubabslink_{{ $index }}"> (click to expand)</span></a><span id="pubabs_{{ $index }}" style="display:none;">: {{ . }}</span></p>{{ end }}
+
+        {{ with .links }}
+        {{ range . }}
+        <p style="margin:5px 0px 5px 0px;"><a href="{{ .url }}" target="blank">• {{ .text }}</a>{{ with .note }}: {{ . }}{{ end }}</li>
+        {{ end }}
+        {{ end }}
+
+        {{ with .presscoverage }}
+        <p style="margin:5px 0px 5px 0px;"> Press coverage:
+        {{ range $i, $e := . }}{{ if $i }},  {{ end }}<a href="{{ .url }}" target="blank">{{ $e.text }}</a>
+        {{ end }}
+        {{ end }}
+
+       {{ with .other }}
+        <p style="margin:5px 0px 5px 0px;"> {{ $other_text }}:
+        {{ range $i, $e := . }}{{ if $i }},  {{ end }}<a href="{{ .url }}" target="blank">{{ $e.text }} </a> 
+        {{ end }}
+        {{ end }}
+    </p>
+
+    {{ end }}
+    {{ end }}
+    <br>
+-->
+    
+
+    {{ end }}
+{{- end }}

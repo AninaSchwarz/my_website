@@ -1,0 +1,22 @@
+relativeURLs = true
+googleAnalytics = ""
+title = "Anina Schwarzenbach"
+theme = "academimal"
+sectionPagesMenu = "main"
+defaultContentLanguage = "en"
+disableKinds = ["taxonomy", "taxonomyTerm"]
+
+[author]
+name = "Anina Schwarzenbach"
+
+[markup] # needed to add html in .md
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+
+[params]
+title = "Postoc,"
+institution = "University of Bern"
+logo = "Anina_Schwarzenbach_006.jpg"
+Twitter = "a_schwarzenbach"
+Email = "anina.schwarzenbach@unibe.ch"
