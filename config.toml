@@ -1,10 +1,8 @@
 relativeURLs = true
-googleAnalytics = ""
 title = "Anina Schwarzenbach"
 theme = "academimal"
 sectionPagesMenu = "main"
 defaultContentLanguage = "en"
-disableKinds = ["taxonomy", "taxonomyTerm"]
 
 [author]
 name = "Anina Schwarzenbach"
