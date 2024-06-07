@@ -14,7 +14,7 @@ In my work, I pair tools from computational social sciences and standard statist
 
 
 I am a former fellow with Harvard Kennedy School's Belfer Center.  I was a fellow with the Harvard Kennedy School's Cyber Project (2020-2022), a Belfer Center International Security Program postdoctoral fellow (2018-2020), as well as a member of the Belfer's team that has built the National Cyber Power Index 2020 (downloaded more than 4,300 times). Previously, I held positions as a postdoctoral associate at the University of Maryland, Department of Criminology and Criminal Justice, and as a graduate researcher at the Max-Planck Institute for Foreign Criminal Law and Criminology in Germany (2013-2018).
-I am a recipient of grants from the Swiss National Science Foundation (SNSF), the University of Bern, and the Fondazione Leonardo among others. I serve as a Board Member of the [Academy of Sociology](https://www.academy-sociology.net), as an elected member of the [Global Young Academy](https://globalyoungacademy.net) and I am a member of the [Digital Society Initiative](https://democracy.dsi.uzh.ch)
+I am a recipient of grants from the Swiss National Science Foundation (SNSF), the University of Bern, and the Fondazione Leonardo among others. I serve as a Board Member of the [Academy of Sociology](https://www.academy-sociology.net), as an elected member of the [Global Young Academy](https://globalyoungacademy.net) and I am a member of the [Digital Society Initiative](https://democracy.dsi.uzh.ch).
 
 **[Curriculum Vitae](/CV_Anina_Schwarzenbach.pdf)** (Updated June 2024)
 
@@ -26,7 +26,7 @@ I am a recipient of grants from the Swiss National Science Foundation (SNSF), th
 
 ## Contact
 
-__Email__: [anina.schwarzenbach@unibe.ch]
+__Email__: anina.schwarzenbach@unibe.ch
 
 <!--- __Email__: [anina.schwarzenbach@unibe.ch](anina.schwarzenbach@unibe.ch) --->   
 <!--- __Phone__: +1-734-846-7754  --->  
