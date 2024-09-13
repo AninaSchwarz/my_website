@@ -7,14 +7,22 @@ weight = 0
 
 Here is some selected media coverage of my research. 
 
+**2024:**
+
+September 2024,  **Der Bund**, *"Viele kannten sich bereits vor der Radikalisierung"*. [[Front Page Article]](https://www.derbund.ch/terrorismus-anina-schwarzenbach-hat-die-netzwerke-untersucht-303498130410)
+
+July 2024,  **University of Bern Media Relations**, *"How Islamist Extremists Forge Relationships with Accomplices"*. [[Press Release]](https://mediarelations.unibe.ch/media_releases/2024/media_releases_2024/how_islamist_extremists_forge_relationships_with_accomplices/index_eng.html)
+
+July 2024,  **University of Bern Media Relations**, *"Ehrung: Anina Schwarzenbach wird Mitglied der Global Young Academy"*. [[Press Release]](https://mediarelations.unibe.ch/personalia/2024/personalnachrichten_juni_2024/index_ger.html)
+
 
 **2020:**
 
-September 2020,  **The Economist**, *"A new global ranking of cyber-power throws up some surprises"*. 	
+September 2020,  **The Economist**, *"A new global ranking of cyber-power throws up some surprises"*. [[Article]](https://www.economist.com/science-and-technology/2020/09/17/a-new-global-ranking-of-cyber-power-throws-up-some-surprises)
 
-September 2020,   Vavra, S., **Cyberscoop**,*" Chinese cyber power is neck-and-neck with the US, Harvard research finds"*. 	
+September 2020,   Vavra, S., **Cyberscoop**,*" Chinese cyber power is neck-and-neck with the US, Harvard research finds"*. 	[[Article]](https://cyberscoop.com/chinese-cyber-power-united-states-harvard-belfer-research/)
 
-Summer 2020,  Gibbons, C., **Belfer Center for Science and International Affairs Newsletter**, *"Anina Schwarzenbach: Linking Discrimination, State Institutions and Violent Extremism"*. 
+Summer 2020,  Gibbons, C., **Belfer Center for Science and International Affairs Newsletter**, *"Anina Schwarzenbach: Linking Discrimination, State Institutions and Violent Extremism"*. [[Article]](https://www.belfercenter.org/publication/anina-schwarzenbach-linking-discrimination-state-institutions-violent-extremism)
 
 <!--Surveys for Economic Research: Understanding How People Think [[Slides]](https://scholar.harvard.edu/files/stantcheva/files/faculty_lunch_2023.pdf) 
 

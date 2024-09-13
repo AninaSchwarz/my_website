@@ -7,6 +7,11 @@ publications:
   - Michael Jensen
   book: "PLOSE ONE"
   year: "2024"
+  presscoverage:
+    - url: "https://www.derbund.ch/terrorismus-anina-schwarzenbach-hat-die-netzwerke-untersucht-303498130410"
+      text: "Der Bund, Front Page"
+    - url: "https://www.derbund.ch/terrorismus-anina-schwarzenbach-hat-die-netzwerke-untersucht-303498130410"
+      text: "University of Bern Media Relations"
 
 - title: "Micro and Macro-Level Risk Factors for Extremism and Terrorism. Toward a Criminology of Extremist Violence"
   pdflink: https://doi.org/10.1515/mks-2021-0127 
@@ -129,6 +134,9 @@ databases:
    - Daniel Cassidy
   book: "Harvard Dataverse."
   year: "2020"
+  presscoverage:
+    - url: "https://www.economist.com/science-and-technology/2020/09/17/a-new-global-ranking-of-cyber-power-throws-up-some-surprises"
+      text: "The Economist"
 
 - title: "Youth-Police Relations in Multi-Ethnic Cities. A Study of Police Encounters and Attitudes Toward the Police in Germany and France"
   pdflink: https://doi.org/10.7910/DVN/GC0JW0
