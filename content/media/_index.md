@@ -14,6 +14,7 @@ March 2024, *"Digital Spaces. Symposium on Attachment to Places in a World of Na
 
 ### 2022
 June 2022, invited academic expert to the *"Association for Progressive Communications (APC) Workshop on Integrating Gender Perspectives into National Cyber Policies"*.	
+
 February 2022, invited academic expert to the *"World Economic Forum (WEF) Cyber Resilience Index Workshop"*. 	
 
 ### 2021
