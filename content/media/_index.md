@@ -21,6 +21,7 @@ March 2021, invited expert to the *"Microsoft and IEP Symposium on Measuring Cyb
 
 ### 2020
 November 2020, invited speaker to the *"Webinar on Ethics, Values and Tech, Indiana University"* (with Simon Jones). [Link](https://www.youtube.com/watch?v=iJkhz5LWnoc).
+
 October 2020, briefing of the Harvard Belfer National Power Index 2020 for the *"NATO"*, (together with Julia Voo, Simon Jones, Irfan Hemani, and Winnona de Sombre).  
 
 ### 2019
