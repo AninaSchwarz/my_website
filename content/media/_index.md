@@ -8,9 +8,12 @@ weight = 0
 
 Here is a list of events where I contributed as invited expert or speaker. 
 
-### 2024
-March 2024, *"Digital Spaces. Symposium on Attachment to Places in a World of Nations"*. Boston College, Newton, US. [Link](https://www.youtube.com/watch?v=IXDWcOeEK8c).
+### 2025
+March 2025, invited speaker to the symposium on *Envisioning Democratic Futures. How artificial intelligence will shape democracy.*  Boston College, Newton, US.
 
+
+### 2024
+March 2024, invited speaker to the symposium on *"Digital Spaces. Attachment to Places in a World of Nations"*. Boston College, Newton, US. [Link](https://www.youtube.com/watch?v=IXDWcOeEK8c).
 
 ### 2022
 June 2022, invited academic expert to the *"Association for Progressive Communications (APC) Workshop on Integrating Gender Perspectives into National Cyber Policies"*.	

@@ -1,5 +1,12 @@
 publications:
 
+- title: "Targets of Police Attention. Young People, Discrimination and Stop-and-Search in Germany and France"
+  pdflink: https://doi.org/10.1093/esr/jcaf006
+  authors: 
+   - Anina Schwarzenbach
+  book: "European Sociological Review"
+  year: "2025"
+
 - title: "Extremists of a feather flock together? Community structures, transitivity, and patterns of homophily in the US Islamist co-offending network"
   pdflink: https://doi.org/10.1371/journal.pone.0298273
   authors: 
@@ -85,41 +92,35 @@ contributionbooks:
 
 underrevision:
 
-- title: "Targets of Police Attention. Young People, Discrimination and Stop-and-Search in Germany and France"
-  authors: 
-   - Anina Schwarzenbach
-  book: "European Sociological Review"
-  year: "Revise and Resubmit"
-
-
-workingpapers:
-
-- title: "The Construction of Social Threat"
-  authors: 
-   - Anina Schwarzenbach
-
-- title: "Generative AI and Deliberative Democracy"    
-  authors: 
-  - Nicholas Hayes Mota
-  - Anina Schwarzenbach
-
-- title: "Distributive Justice, Resource Inequality, and Domestic Terrorist Attacks"
+- title: Distributive Injustice, Health Inequity, and Domestic Terrorism"
   # pdflink: https://osf.io/preprints/socarxiv/s6xtc/ 
   authors: 
   - Anina Schwarzenbach
 
-- title: "Cyber Power: Assessing Capabilities and Intent in Cyberspace"
+# - title: "Targets of Police Attention. Young People, Discrimination and Stop-and-Search in Germany and France"
+#   authors: 
+#    - Anina Schwarzenbach
+#   book: "European Sociological Review"
+#   year: "Revise and Resubmit"
+
+
+workingpapers:
+
+- title: "Constructing Social Threat: Identity Frames, Opinion Dynamics, and the Impact of Terrorist Attacks in Swiss Media Coverage of Extremism (1994-2024)"
   authors: 
    - Anina Schwarzenbach
-   - Julia Voo
-   - Irfan Heman
-   - Simon Jones
-   - Daniel Cassidy
+   - Livia Zöbeli
 
 - title: "Political Legitimacy and Political Extremism"
   authors: 
    - Anina Schwarzenbach
    - Dirk Baier
+
+- title: "Societal Impacts of Embodied Artificial Intelligence"    
+  authors: 
+  - Shaoshan Liu
+  - Anina Schwarzenbach
+
 
 databases:
 
