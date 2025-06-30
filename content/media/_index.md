@@ -9,7 +9,7 @@ weight = 0
 Here is a list of events where I contributed as invited expert or speaker. 
 
 ### 2025
-March 2025, invited speaker to the symposium on *Envisioning Democratic Futures. How artificial intelligence will shape democracy.*  Boston College, Newton, US.
+March 2025, invited speaker to the symposium on *"Envisioning Democratic Futures. How artificial intelligence will shape democracy".*  Boston College, Newton, US.
 
 
 ### 2024
