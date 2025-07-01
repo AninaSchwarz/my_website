@@ -9,6 +9,11 @@ weight = 0
 Here is a list of events where I contributed as invited expert or speaker. 
 
 ### 2025
+
+May 2025, invited speaker to the *Reset Dialogues on Civilizations*, Venice, Italy.
+
+May 2025, invited academic expert and panel discussant at the *Swiss Security Conference*, organized by the Federal Department of Defence, Civil Protection and Sport (DDPS), Bern, Switzerland.
+
 March 2025, invited speaker to the symposium on *"Envisioning Democratic Futures. How artificial intelligence will shape democracy".*  Boston College, Newton, US.
 
 
